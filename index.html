@@ -1,0 +1,171 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Father's Day</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }body {
+  background: linear-gradient(to bottom right, #f9f3ea, #fbe4d8);
+  color: #333;
+  line-height: 1.7;
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 2s ease;
+}
+
+.hero {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  height: auto;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  color: #d86f45;
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin-top: 1rem;
+  color: #333;
+  font-weight: 300;
+}
+
+.letter {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  white-space: pre-wrap;
+}
+
+.footer-message {
+  margin-top: 3rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #d86f45;
+}
+
+.signature {
+  text-align: center;
+  margin-top: 2rem;
+  font-style: italic;
+  color: #555;
+}
+
+.music-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #d86f45;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.music-btn:hover {
+  background: #bf5e3b;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+  <!-- Hero Image -->
+  <div class="container">
+    <img src="/Red Modern Happy Father's Day Instagram Post.png" alt="Father and Child" class="hero">
+    <h1>Happy Father's Day</h1>
+    <h2>To My Hero & Mentor</h2><div class="letter">
+  Many people see a father as strong — never shaking, always standing.
+  But not everyone sees the behind-the-scenes of those actions.
+  Behind every “I’m fine,” there is always a struggle.
+
+  A man who wakes up every day, no matter how tired or sick he is,
+  because he has to cater and fend for his family.
+
+  A man who eats last — and sometimes doesn’t eat at all.
+  A man who sacrifices his own needs for the wants of his family.
+
+  We celebrate heroes in capes and uniforms, like police officers.
+  But we often fail to celebrate the everyday hero who sacrifices his own life for the sake of others —
+  The one who is the pillar of every family,
+  The one who puts the dreams of his children ahead of his own sleep.
+
+  So today, I want to celebrate my mentor, my superhero — the one who inspires me to never give up and to keep going.
+
+  Many might not recognize the behind-the-scenes...
+  Some may not even appreciate the scene itself.
+
+  But we see you.
+  We love you.
+  And we appreciate you for being our silent warrior.
+</div>
+
+<div class="footer-message">
+  Happy Father's Day, Dad ❤️
+</div>
+
+<div class="signature">
+  — With love, Samuel Aderogba
+</div>
+
+  </div>  <!-- Music Controls -->  <audio id="bgMusic" loop>
+    <source src="Abochi-Fathers-Day-Song-Soundwela.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  
+  <button class="music-btn" onclick="toggleMusic()">
+  <i class="fas fa-play"></i> <span>Play Music</span>
+</button>
+
+  <script>
+    const music = document.getElementById('bgMusic');
+    const btn = document.querySelector('.music-btn');
+    let isPlaying = false;
+
+    function toggleMusic() {
+  const icon = btn.querySelector('i');
+  const text = btn.querySelector('span');
+
+  if (isPlaying) {
+    music.pause();
+    icon.classList.remove('fa-pause');
+    icon.classList.add('fa-play');
+    text.textContent = 'Play Music';
+  } else {
+    music.play();
+    icon.classList.remove('fa-play');
+    icon.classList.add('fa-pause');
+    text.textContent = 'Pause Music';
+  }
+
+  isPlaying = !isPlaying;
+}
+  </script></body>
+</html>
